@@ -92,7 +92,7 @@ export default function Films() {
             <p>{film.title}</p>
             <p>{film.director}</p>
             <p>{dateFormat(film.releaseDate)}</p>
-            <p>{film.producers}</p>
+            <p>{film.producers.join(', ')}</p>
           </div>
         ))}
       </div>
