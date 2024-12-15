@@ -5,13 +5,13 @@ import { useTranslation } from "react-i18next";
 
 export default function Films() {
   const { loading, error, data } = useQuery(GET_FILMS);
-  const { t } = useTranslation(); // Use translation hook
+  const { t } = useTranslation(); 
 
   const [filterDirector, setDirector] = useState('');
   const [filterYear, setFilterYear] = useState('');
   const [sortOption, setSortOption] = useState('releaseDate');
-  const [currentPage, setCurrentPage] = useState(1); // New state for pagination
-  const filmsPerPage = 3; // Number of films to show per page
+  const [currentPage, setCurrentPage] = useState(1); 
+  const filmsPerPage = 3; 
 
   if (loading) return <div className="loader"><div className="spinner"></div></div>;
   if (error) return <p className="error">Error: {error.message}</p>;
