@@ -92,7 +92,7 @@ export default function Films() {
             <p>{film.title}</p>
             <p>{film.director}</p>
             <p>{dateFormat(film.releaseDate)}</p>
-            <button>{t('readMore')}</button>
+            <p>{film.producers}</p>
           </div>
         ))}
       </div>
