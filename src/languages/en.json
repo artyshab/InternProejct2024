@@ -8,6 +8,7 @@
     "title": "Title (A-Z)",
     "readMore": "Read More",
     "previous": "Previous",
-    "next": "Next"
+    "next": "Next",
+    "error": "Error: {{message}}"
   }
   

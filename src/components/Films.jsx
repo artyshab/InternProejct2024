@@ -14,7 +14,7 @@ export default function Films() {
   const filmsPerPage = 3; 
 
   if (loading) return <div className="loader"><div className="spinner"></div></div>;
-  if (error) return <p className="error">Error: {error.message}</p>;
+  if (error) return <p className="error">{t('error', { message: error.message })}</p>; 
 
   const uniqueYears = Array.from(
     new Set(data.allFilms.films.map((film) => new Date(film.releaseDate).getFullYear()))
