@@ -1,0 +1,30 @@
+footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    padding: 0.3rem;
+    width: 100%;
+    background-color: #ffe81f;
+    .copyright {
+      p {
+        font-size: 1.2rem;
+        font-weight: 600;
+      }
+    }
+    .buttons {
+      display: flex;
+      gap: 10px;
+      button {
+        background-color: black;
+        color: white;
+        border: none;
+        font-size: 0.9rem;
+        padding: 5px 10px;
+        cursor: pointer;
+        border-radius: 10px;
+      }
+    }
+  }
